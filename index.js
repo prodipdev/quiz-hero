@@ -23,8 +23,8 @@ startQuiz.addEventListener("click", () => {
 
   let x = setInterval(() => {
     if (counterNum < 0) {
-      coutDown.classList.remove("flex");
-      coutDown.classList.add("hidden");
+      countDown.classList.remove("flex");
+      countDown.classList.add("hidden");
       counterNum = 3;
       count = 0;
       timer = null;
@@ -151,7 +151,7 @@ document.querySelector("#submit").addEventlistener("click", () => {
       )}<span class="text-xs">sec</span></span>
     </p>
   </div>
-  
+
   <button onclick="location.reload();" class="bg-green-600 text-white w-full py-2 rounded mt-16">Restart</button>
   ${
     storage
