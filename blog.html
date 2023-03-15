@@ -53,8 +53,8 @@
                 <div class="collapse-title text-xl font-medium">
                     What is the difference between map(), filter(), find() and forEach() methods?
                 </div>
-                <div class="collapse-content">
-                    <ul class="list-disc list-outside ml-3">
+                <div class="collapse-content bg-orange-50">
+                    <ul class="list-disc list-outside ml-3 p-3">
                         <li class="mb-2">The <span class="bg-red-100 px-1 rounded">map()</span> method is used to
                             iterate each element of an array and return a new array with the same length as the original
                             array.</li>
@@ -73,11 +73,17 @@
                 <div class="collapse-title text-xl font-medium">
                     What is the difference between Local Storage, Session Storage and Cookies?
                 </div>
-                <div class="collapse-content">
-                    <ul class="list-disc list-outside ml-3">
-                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">localStorage</span> is used to store data in the user's browser and the data stored in local storage does not expire.</li>
-                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">sessionStorage</span> is used to store data in the user's browser but the data is only available during the current browser session. When the user closes their browser the session storage data is cleared.</li>
-                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">cookies</span> help websites remember users and their preferences, which can improve their browsing experience and cookies can also be used to track user behavior and gather personal information, which has raised privacy concerns.</li>
+                <div class="collapse-content bg-orange-50">
+                    <ul class="list-disc list-outside ml-3 p-3">
+                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">localStorage</span> is used to store
+                            data in the user's browser and the data stored in local storage does not expire.</li>
+                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">sessionStorage</span> is used to
+                            store data in the user's browser but the data is only available during the current browser
+                            session. When the user closes their browser the session storage data is cleared.</li>
+                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">cookies</span> help websites remember
+                            users and their preferences, which can improve their browsing experience and cookies can
+                            also be used to track user behavior and gather personal information, which has raised
+                            privacy concerns.</li>
                     </ul>
                 </div>
             </div>
@@ -85,25 +91,32 @@
                 <div class="collapse-title text-xl font-medium">
                     What is an event loop and how does its work?
                 </div>
-                <div class="collapse-content">
-                    <p>The event loop allows JavaScript to handle multiple tasks simultaneously without blocking the main thread, which is crucial for building responsive and efficient web applications. <br>
-                    In simple terms, the event loop continuously checks for tasks that are ready to be executed and adds them to the call stack. If the call stack is empty, the event loop waits for new tasks to be added. When a task is added to the call stack, it is executed, and any other tasks that are waiting in the queue can be executed in the same manner.</p>
+                <div class="collapse-content bg-orange-50">
+                    <p class="p-3">The event loop allows JavaScript to handle multiple tasks simultaneously without
+                        blocking the main thread, which is crucial for building responsive and efficient web
+                        applications. <br>
+                        In simple terms, the event loop continuously checks for tasks that are ready to be executed and
+                        adds them to the call stack. If the call stack is empty, the event loop waits for new tasks to
+                        be added. When a task is added to the call stack, it is executed, and any other tasks that are
+                        waiting in the queue can be executed in the same manner.</p>
                 </div>
             </div>
             <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box my-2">
                 <div class="collapse-title text-xl font-medium">
                     What does quizTimer() do?
                 </div>
-                <div class="collapse-content">
-                    <p>This function calculates the quiz execution time and notifies it 60 seconds after the quiz execution time starts.</p>
+                <div class="collapse-content bg-orange-50">
+                    <p class="p-3">This function calculates the quiz execution time and notifies it 60 seconds after the
+                        quiz execution time starts and blinking every second after 60 seconds.</p>
                 </div>
             </div>
             <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box my-2">
                 <div class="collapse-title text-xl font-medium">
                     What does chooseQuiz() do?
                 </div>
-                <div class="collapse-content">
-                    <p>This function picks the selected answer for each quiz and calls a function to display the position of the answer</p>
+                <div class="collapse-content bg-orange-50">
+                    <p class="p-3">This function picks the selected answer for each quiz and calls a function to display
+                        the position of the answer.</p>
                 </div>
             </div>
         </section>
