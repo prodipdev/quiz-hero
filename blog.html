@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Quiz Hero Blog</title>
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -30,23 +32,55 @@
 <body class="bg-white font-common">
     <!-- Header/Navbar section start -->
     <header class="h-16 flex items-center shadow-sm">
-      <nav class="flex justify-between items-center w-9/12 mx-auto">
-        <div class="text-zinc-800 font-bold uppercase">
-          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
-          <p class="text-[10px] font-normal capitalize -mt-1">
-            Get ready to Quiz and be amazed!
-          </p>
-        </div>
-        <a href="index.html" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
-          Quiz
-        </a>
-      </nav>
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <a href="index.html" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Quiz
+            </a>
+        </nav>
     </header>
     <!-- Header/Navbar section end -->
 
     <!-- Start Main Body -->
     <main>
-        <section>
+        <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto my-8">
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box my-2">
+                <div class="collapse-title text-xl font-medium">
+                    What is the difference between map(), filter(), find() and forEach() methods?
+                </div>
+                <div class="collapse-content">
+                    <ul class="list-disc list-outside ml-3">
+                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">map()</span> method is used to
+                            iterate each element of an array and return a new array with the same length as the original
+                            array.</li>
+                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">filter()</span> method is used to
+                            logically iterate each element of an array in which's elements pass a given logic.</li>
+                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">find()</span> method is used to
+                            logically iterate each element of an array and it's stored only one element which element
+                            pass a given logic and then stops iterate execution.</li>
+                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">forEach()</span> method is used to
+                            loop over the elements of an array and perform an action for each element in an array and
+                            does not return anything.</li>
+                    </ul>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box my-2">
+                <div class="collapse-title text-xl font-medium">
+                    What is the difference between Local Storage, Session Storage and Cookies?
+                </div>
+                <div class="collapse-content">
+                    <ul class="list-disc list-outside ml-3">
+                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">localStorage</span> is used to store data in the user's browser and the data stored in local storage does not expire.</li>
+                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">sessionStorage</span> is used to store data in the user's browser but the data is only available during the current browser session. When the user closes their browser the session storage data is cleared.</li>
+                        <li class="mb-2">The <span class="bg-red-100 px-1 rounded">cookies</span> help websites remember users and their preferences, which can improve their browsing experience and cookies can also be used to track user behavior and gather personal information, which has raised privacy concerns.</li>
+                    </ul>
+                </div>
+            </div>
 
         </section>
     </main>
@@ -54,9 +88,9 @@
 
     <!-- Footer section start -->
     <footer class="py-10 text-center text-sm">
-      Copyright © 2023 Quiz Hero All Rights Reserved.
+        Copyright © 2023 Quiz Hero All Rights Reserved.
     </footer>
     <!-- Footer section end -->
-  </body>
+</body>
 
 </html>
